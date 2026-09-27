@@ -101,10 +101,8 @@ gsap.to(".hero-copy", { y: -90, opacity: 0.3 /* ... */ });
 
 ## Liên hệ
 
-- GitHub: https://github.com/RyotheCoder
-- C++: https://github.com/RyotheCoder/CHT-Bigzero
-- Python: https://github.com/RyotheCoder/syncode
-- Discord: https://discord.com/users/1532300142663827567
+- GitHub: [Ryo The Coder](https://github.com/RyotheCoder)
+- Discord: [Discord User - Ryo](https://discord.com/users/1532300142663827567)
 
 Nội dung dự án/kinh nghiệm trong trang là minh họa demo.
 
