@@ -12,7 +12,11 @@ Trang portfolio một trang, phong cách Neobrutalism. Tác giả:
 ## Chạy
 
 ```bash
-cd portfolio
+# Clone về máy
+git clone https://github.com/RyotheCoder/portfolio-neobrutalism-2026.git
+cd portfolio-neobrutalism-2026
+
+# Chạy local
 python3 -m http.server 8000
 # mở http://localhost:8000
 ```
