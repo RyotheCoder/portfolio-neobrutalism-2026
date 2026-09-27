@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryo The Dev (Ryo) — Creative Developer & Visual Designer</title>
+  <meta name="description" content="Portfolio của Ryo The Dev (Ryo) — Creative Developer chuyên React, Motion và thiết kế Neobrutalism." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23FFDC00' stroke='black' stroke-width='4'/%3E%3Ctext x='32' y='44' font-family='Arial Black' font-size='32' font-weight='900' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important}.loader{display:none !important}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
+
+  <div class="loader" id="loader">
+    <div class="loader-box" role="status" aria-label="Đang tải portfolio của Ryo">
+      <p class="loader-title">RYO.THE.DEV — PORTFOLIO v2026</p>
+      <p class="loader-line" aria-hidden="true">&gt; loading modules ..... OK</p>
+      <p class="loader-line" aria-hidden="true">&gt; loading projects .... OK</p>
+      <div class="loader-bar" aria-hidden="true"><i id="loadFill"></i></div>
+      <p class="loader-pct" aria-hidden="true"><span id="loadPct">0</span>%</p>
+    </div>
+  </div>
+
+  <header class="dock-wrap">
+    <nav class="dock" aria-label="Điều hướng chính">
+      <a class="dock-logo" href="#home" aria-label="Ryo The Dev — về đầu trang"><span aria-hidden="true">R*</span></a>
+      <a href="#home" data-tab aria-current="page"><span class="dock-icon" aria-hidden="true">⌂</span><span>Nhà</span></a>
+      <a href="#about" data-tab><span class="dock-icon" aria-hidden="true">●</span><span>Về tôi</span></a>
+      <a href="#spotlight" data-tab><span class="dock-icon" aria-hidden="true">★</span><span>Nổi bật</span></a>
+      <a href="#work" data-tab><span class="dock-icon" aria-hidden="true">◧</span><span>Dự án</span></a>
+      <a href="#journey" data-tab><span class="dock-icon" aria-hidden="true">◆</span><span>Hành trình</span></a>
+      <a href="#contact" data-tab><span class="dock-icon" aria-hidden="true">✉</span><span>Liên hệ</span><span class="dock-badge" aria-hidden="true">1</span><span class="sr-only">, còn 1 vị trí</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <span class="doodle doodle--plus d-hero-1" data-drift="40px" aria-hidden="true">✚</span>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="tag tag--pink rotate-left">★ PORTFOLIO 2026 ★ CREATIVE DEVELOPER</p>
+          <p class="term" title="Bấm để chạy lại hiệu ứng" aria-label="Trạng thái: đang nhận dự án, còn 1 trên 2 slot"><span aria-hidden="true">&gt; </span><span class="scramble" data-text="status: OPEN_TO_WORK // slot: 1/2" aria-hidden="true">status: OPEN_TO_WORK // slot: 1/2</span><span class="caret" aria-hidden="true"></span></p>
+          <h1>TÔI XÂY DỰNG<br /><span class="hl hl--yellow">WEBSITE</span> &amp;<br /><span class="hl hl--lime">THƯƠNG HIỆU</span></h1>
+          <p class="lede">Tôi là <strong>Ryo</strong> (Ryo The Dev), Creative Developer tại TP. Hồ Chí Minh với hơn 4 năm kinh nghiệm. Chuyên môn: phát triển web app, motion/interaction và thiết kế thương hiệu.</p>
+          <div class="hero-cta">
+            <a class="btn btn--pink" href="#work">Xem dự án ↓</a>
+            <a class="btn btn--white" href="#contact">Đặt lịch call 15'</a>
+          </div>
+          <dl class="hero-stats">
+            <div class="stat stat--yellow"><dt>4+ năm</dt><dd>kinh nghiệm</dd></div>
+            <div class="stat stat--blue"><dt>48 dự án</dt><dd>đã hoàn thành</dd></div>
+            <div class="stat stat--lime"><dt>12 giải</dt><dd>thiết kế & lập trình</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-card-wrap">
+          <div class="sticker sticker--star" data-drift="-46px" aria-hidden="true">★ RYO</div>
+          <div class="sticker sticker--bolt" data-drift="60px" aria-hidden="true">⚡ OPEN TO WORK</div>
+          <article class="profile-card" data-drift="-24px">
+            <div class="profile-photo" role="img" aria-label="Ảnh minh họa chân dung Ryo phong cách hoạt hình">
+              <span class="avatar" aria-hidden="true">R</span>
+              <span class="photo-grid" aria-hidden="true"></span>
+            </div>
+            <h2>Ryo The Dev</h2>
+            <p class="role">Creative Developer — React / Motion / 3D</p>
+            <ul class="chip-row" aria-label="Kỹ năng chính">
+              <li>React</li><li>TypeScript</li><li>Motion</li><li>Blender</li>
+            </ul>
+            <div class="profile-row">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Sẵn sàng freelance toàn cầu</span>
+            </div>
+          </article>
+          <div class="sticker sticker--smile" data-drift="-30px" aria-hidden="true">↓ PORTFOLIO</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>REACT ✷ TYPESCRIPT ✷ MOTION ✷ FIGMA ✷ THREE.JS ✷ BRANDING ✷ NEOBRUTALISM ✷&nbsp;</span>
+        <span>REACT ✷ TYPESCRIPT ✷ MOTION ✷ FIGMA ✷ THREE.JS ✷ BRANDING ✷ NEOBRUTALISM ✷&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <span class="doodle doodle--star d-about-1" data-drift="-44px" aria-hidden="true">★</span>
+      <span class="doodle doodle--ring d-about-2" data-drift="44px" aria-hidden="true"></span>
+      <div class="section-head">
+        <p class="kicker kicker--blue">01 — VỀ TÔI</p>
+        <h2>Dịch vụ của tôi</h2>
+        <p class="sub">Ba nhóm dịch vụ chính tôi cung cấp cho khách hàng cá nhân và doanh nghiệp.</p>
+      </div>
+      <div class="bento">
+        <article class="bento-tile tile-a tile-yellow reveal">
+          <div class="card-icon" data-drift="-34px" aria-hidden="true">◧</div>
+          <h3>Phát triển Web App</h3>
+          <p>Dashboard, SaaS, website bán hàng — tốc độ tải nhanh, dễ sử dụng, tối ưu chuyển đổi.</p>
+          <p>Tôi phụ trách trọn vòng đời sản phẩm: từ thiết kế giao diện đến triển khai và đo lường hiệu quả.</p>
+          <a class="card-link" href="#work">Xem dự án →</a>
+        </article>
+        <article class="bento-tile tile-b tile-pink reveal">
+          <div class="card-icon" data-drift="34px" aria-hidden="true">✷</div>
+          <h3>Motion & Interaction</h3>
+          <p>Hiệu ứng cuộn và chuyển động giúp truyền tải nội dung, tăng thời gian ở lại trang.</p>
+          <a class="card-link" href="#spotlight">Xem điểm nhấn →</a>
+        </article>
+        <article class="bento-tile tile-c tile-lime reveal">
+          <div class="card-icon" data-drift="-34px" aria-hidden="true">⬢</div>
+          <h3>Brand & Visual</h3>
+          <p>Logo, bộ nhận diện và ấn phẩm truyền thông đồng bộ, dễ ghi nhớ.</p>
+          <a class="card-link" href="#contact">Đặt brand →</a>
+        </article>
+        <article class="bento-tile tile-d tile-black reveal">
+          <h3>Tháng này còn 1/2 vị trí</h3>
+          <p>Mô tả nhu cầu của bạn — tôi phản hồi trong 24 giờ.</p>
+          <a class="card-link" href="#contact">Đặt lịch trao đổi →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <section class="section parallax-outer" id="spotlight">
+      <div class="section-head">
+        <p class="kicker kicker--yellow">02 — DỰ ÁN NỔI BẬT</p>
+        <h2>Muse Festival 2025</h2>
+        <p class="sub">Website chính thức của lễ hội âm nhạc 3 ngày với hơn 40 nghệ sĩ tại Đà Lạt. Tôi đảm nhiệm toàn bộ: ý tưởng, thiết kế giao diện và lập trình.</p>
+      </div>
+
+      <div class="parallax-viewport" id="parallaxViewport">
+        <div class="scroll-progress" aria-hidden="true"></div>
+        <!-- LAYER BACK: chậm nhất -->
+        <div class="player layer-back" aria-hidden="true">
+          <span class="blob blob--pink"></span>
+          <span class="blob blob--blue"></span>
+          <span class="blob blob--yellow"></span>
+          <span class="giant-word">RYO THE DEV ★ PORTFOLIO ★ RYO THE DEV ★</span>
+          <span class="grid-dots"></span>
+        </div>
+        <!-- LAYER MID -->
+        <div class="player layer-mid" aria-hidden="true">
+          <span class="float-shape shape--star">★</span>
+          <span class="float-shape shape--ring"></span>
+          <span class="float-shape shape--bolt">⚡</span>
+          <span class="float-shape shape--pill">2026 ★</span>
+        </div>
+        <!-- LAYER FRONT: nội dung -->
+        <div class="player layer-front">
+          <article class="parallax-card card-a">
+            <p class="mini-tag">VAI TRÒ</p>
+            <h3>Thiết kế & Lập trình</h3>
+            <p>Phụ trách toàn bộ từ ý tưởng, thiết kế giao diện đến lập trình trong 6 tuần.</p>
+          </article>
+          <article class="parallax-card card-b">
+            <p class="mini-tag">KẾT QUẢ</p>
+            <h3>12.000 vé hết trong 48 giờ</h3>
+            <p>320.000 lượt truy cập trong mùa đầu tiên, thời gian xem trung bình 4 phút.</p>
+          </article>
+          <article class="parallax-card card-c">
+            <p class="mini-tag">LIÊN HỆ</p>
+            <h3>Trao đổi về dự án của bạn</h3>
+            <p>Tôi nhận tối đa 2 dự án mỗi tháng. Vị trí tiếp theo hiện đang mở.</p>
+            <div class="scroll-hint" aria-hidden="true"><span></span>CUỘN</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-strip" aria-hidden="true">
+      <div class="divider-track">
+        <span>RYO THE DEV ★ PORTFOLIO 2026 ★ RYO THE DEV ★ PORTFOLIO 2026 ★&nbsp;</span>
+        <span>RYO THE DEV ★ PORTFOLIO 2026 ★ RYO THE DEV ★ PORTFOLIO 2026 ★&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <span class="doodle doodle--bolt d-work-1" data-drift="48px" aria-hidden="true">⚡</span>
+      <span class="doodle doodle--dot d-work-2" data-drift="-48px" aria-hidden="true"></span>
+      <div class="section-head row">
+        <div>
+          <p class="kicker kicker--pink">03 — DỰ ÁN CHỌN LỌC</p>
+          <h2>Dự án đã thực hiện</h2>
+        </div>
+        <div class="filter-row" role="group" aria-label="Lọc dự án">
+          <button class="btn btn--small btn--black is-active" data-filter="all">Tất cả</button>
+          <button class="btn btn--small btn--white" data-filter="web">Web App</button>
+          <button class="btn btn--small btn--white" data-filter="motion">Motion</button>
+          <button class="btn btn--small btn--white" data-filter="brand">Brand</button>
+        </div>
+      </div>
+      <div class="work-grid" id="workGrid">
+        <article class="work-card reveal" data-cat="web">
+          <div class="work-thumb thumb--yellow"><span aria-hidden="true">◧ DASH</span></div>
+          <div class="work-body">
+            <p class="mini-tag">WEB APP — 2026</p>
+            <h3>ComX Dashboard</h3>
+            <p>Nền tảng SaaS quản lý đơn hàng cho 2.000 cửa hàng. Biểu đồ realtime, giảm 42% thời gian thao tác.</p>
+            <ul class="chip-row"><li>React</li><li>Zustand</li><li>Recharts</li></ul>
+          </div>
+        </article>
+        <article class="work-card reveal" data-cat="motion">
+          <div class="work-thumb thumb--pink"><span aria-hidden="true">✷ MUSE</span></div>
+          <div class="work-body">
+            <p class="mini-tag">MOTION — 2025</p>
+            <h3>Muse Festival Site</h3>
+            <p>Website lễ hội âm nhạc: bán hết vé sau 2 ngày mở bán, 320.000 lượt truy cập mùa đầu tiên.</p>
+            <ul class="chip-row"><li>Motion</li><li>Astro</li><li>Lenis</li></ul>
+          </div>
+        </article>
+        <article class="work-card reveal" data-cat="brand">
+          <div class="work-thumb thumb--lime"><span aria-hidden="true">⬢ BOLD</span></div>
+          <div class="work-body">
+            <p class="mini-tag">BRAND — 2025</p>
+            <h3>Bánh Mì Boys</h3>
+            <p>Thiết kế nhận diện cho chuỗi cửa hàng bánh mì: logo, bao bì, ấn phẩm. Doanh thu tăng 30% sau tái định vị.</p>
+            <ul class="chip-row"><li>Figma</li><li>Illustrator</li></ul>
+          </div>
+        </article>
+        <article class="work-card reveal" data-cat="web">
+          <div class="work-thumb thumb--blue"><span aria-hidden="true">▣ SHOP</span></div>
+          <div class="work-body">
+            <p class="mini-tag">WEB APP — 2024</p>
+            <h3>Giày Cũ Store</h3>
+            <p>Website bán giày secondhand với quy trình thanh toán một bước. Giá trị đơn trung bình tăng 18%.</p>
+            <ul class="chip-row"><li>Next.js</li><li>Stripe</li></ul>
+          </div>
+        </article>
+        <article class="work-card reveal" data-cat="motion">
+          <div class="work-thumb thumb--purple"><span aria-hidden="true">◉ ORBIT</span></div>
+          <div class="work-body">
+            <p class="mini-tag">MOTION — 2024</p>
+            <h3>Orbit Portfolio Engine</h3>
+            <p>Bộ template portfolio tùy biến kéo-thả với timeline hiệu ứng, hơn 4.000 lượt tải về.</p>
+            <ul class="chip-row"><li>TypeScript</li><li>GSAP</li></ul>
+          </div>
+        </article>
+        <article class="work-card reveal" data-cat="brand">
+          <div class="work-thumb thumb--orange"><span aria-hidden="true">☺ POP</span></div>
+          <div class="work-body">
+            <p class="mini-tag">BRAND — 2023</p>
+            <h3>Trà Sữa Pop!</h3>
+            <p>Mascot và bao bì cho thương hiệu trà sữa. Chiến dịch đạt 12 triệu lượt xem trên TikTok.</p>
+            <ul class="chip-row"><li>Branding</li><li>Packaging</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <span class="doodle doodle--plus d-journey-1" data-drift="-40px" aria-hidden="true">✚</span>
+      <span class="doodle doodle--star d-journey-2" data-drift="40px" aria-hidden="true">★</span>
+      <div class="section-head">
+        <p class="kicker kicker--lime">04 — HÀNH TRÌNH</p>
+        <h2>Kinh nghiệm làm việc</h2>
+      </div>
+      <div class="journey-grid">
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <div class="t-opposite"><time datetime="2022">2022</time></div>
+            <div class="t-rail" aria-hidden="true"><span class="t-dot"></span><span class="t-connector"></span></div>
+            <div class="t-body"><h3>Fresher Frontend — BeeTech</h3><p>Thực hiện hơn 100 landing page, thành thạo cắt giao diện theo thiết kế.</p></div>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-opposite"><time datetime="2023">2023</time></div>
+            <div class="t-rail" aria-hidden="true"><span class="t-dot t-dot--pink"></span><span class="t-connector"></span></div>
+            <div class="t-body"><h3>UI Engineer — CafeCode</h3><p>Xây dựng design system, quản lý nhóm 3 người, định hình phong cách thiết kế cá nhân.</p></div>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-opposite"><time datetime="2024">2024</time></div>
+            <div class="t-rail" aria-hidden="true"><span class="t-dot t-dot--blue"></span><span class="t-connector"></span></div>
+            <div class="t-body"><h3>Freelance toàn cầu</h3><p>Hợp tác với hơn 20 khách hàng tại Mỹ, Singapore và Úc. Xếp hạng Top Rated trên Upwork.</p></div>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-opposite"><time datetime="2026">2026</time></div>
+            <div class="t-rail" aria-hidden="true"><span class="t-dot t-dot--loading"></span></div>
+            <div class="t-body"><h3>Creative Developer độc lập <span class="t-now">ĐANG DIỄN RA</span></h3><p>Nhận dự án website và thương hiệu trọn gói, tối đa 2 dự án mỗi tháng.</p></div>
+          </li>
+        </ol>
+        <aside class="skills-box reveal" aria-label="Thanh kỹ năng">
+          <h3>Kỹ năng chuyên môn</h3>
+          <div class="skill"><div class="skill-top"><span>React / TypeScript</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+          <div class="skill"><div class="skill-top"><span>Motion / CSS Animation</span><span>92%</span></div><div class="bar"><i style="width:92%"></i></div></div>
+          <div class="skill"><div class="skill-top"><span>Figma / Branding</span><span>88%</span></div><div class="bar"><i style="width:88%"></i></div></div>
+          <div class="skill"><div class="skill-top"><span>Three.js / Blender</span><span>74%</span></div><div class="bar"><i style="width:74%"></i></div></div>
+          <p class="quote">Được khách hàng đánh giá cao về tiến độ và chất lượng bàn giao.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <span class="doodle doodle--ring d-contact-1" data-drift="-42px" aria-hidden="true"></span>
+      <span class="doodle doodle--bolt d-contact-2" data-drift="42px" aria-hidden="true">⚡</span>
+      <div class="contact-box reveal">
+        <div class="contact-copy">
+          <p class="kicker kicker--black">05 — LIÊN HỆ</p>
+          <h2>Liên hệ hợp tác</h2>
+          <p>Hiện còn 1/2 vị trí trong tháng. Tôi phản hồi email trong 24 giờ và gửi báo giá trong 48 giờ.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:hello@ryothedev.io">hello@ryothedev.io</a></li>
+            <li><strong>Phone/Zalo:</strong> <a href="tel:+84901234567">0901 234 567</a></li>
+            <li><strong>Github:</strong> <a href="https://github.com/RyotheCoder" target="_blank" rel="noopener">github.com/RyotheCoder</a></li>
+          </ul>
+          <div class="capacity">
+            <div class="ring" role="progressbar" aria-label="Lịch làm việc tháng này đã kín" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <svg viewBox="0 0 72 72" aria-hidden="true">
+                <circle class="ring-track" cx="36" cy="36" r="33"></circle>
+                <circle class="ring-bg" cx="36" cy="36" r="30"></circle>
+                <circle class="ring-fill" cx="36" cy="36" r="30"></circle>
+                <text x="36" y="36" dy=".35em" text-anchor="middle">50%</text>
+              </svg>
+            </div>
+            <p><strong>Lịch tháng này đã kín 50%.</strong><br />Còn 1/2 vị trí — đặt trước để giữ chỗ.</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Tên bạn<input type="text" name="name" placeholder="Nguyễn Văn An" required autocomplete="name" /></label>
+          <label>Email<input type="email" name="email" placeholder="ban@email.com" required autocomplete="email" /></label>
+          <label>Loại dự án
+            <select name="type" required>
+              <option value="">— Chọn loại dự án —</option>
+              <option>Web App</option>
+              <option>Website hiệu ứng / Landing page</option>
+              <option>Brand + Website trọn gói</option>
+            </select>
+          </label>
+          <label>Mô tả dự án<textarea name="msg" rows="4" placeholder="Mô tả ngắn gọn về dự án của bạn…" required></textarea></label>
+          <div class="form-progress">
+            <p class="fp-label">Hoàn thiện form: <strong id="fpText">0/4</strong></p>
+            <progress id="fpBar" max="4" value="0" aria-label="Mức độ hoàn thiện form liên hệ" aria-valuetext="0 trên 4 mục đã điền"></progress>
+          </div>
+          <button class="btn btn--black btn--big" type="submit">GỬI → NHẬN BÁO GIÁ</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>© <span id="year">2026</span> RYO.THE.DEV</strong> — Thiết kế và lập trình bởi Ryo.</p>
+    <button class="btn btn--small btn--yellow" id="toTop">↑ Lên đầu</button>
+  </footer>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
